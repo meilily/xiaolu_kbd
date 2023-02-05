@@ -28,7 +28,7 @@
   (pad "1" thru_hole circle (at 6.5 0) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (tstamp 7b4351f2-2e33-4812-804e-c0e214c3a668))
   (pad "2" thru_hole circle (at 0 4.5) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (tstamp 9eae2ce3-d702-4ce5-857e-00c719b86368))
   (pad "2" thru_hole circle (at 6.5 4.5) (size 1.6 1.6) (drill 0.9) (layers *.Cu *.Mask) (tstamp d2b69df0-182a-431c-a694-8d3a2f14dbc3))
-  (model "${KIPRJMOD}/libfootprints/3dmodels/TS-AGGNH-G.wrl"
+  (model "${KIPRJMOD}/libfootprints.pretty/3dmodels/TS-AGGNH-G.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 0.3937007874 0.3937007874 0.3937007874))
     (rotate (xyz 0 0 0))

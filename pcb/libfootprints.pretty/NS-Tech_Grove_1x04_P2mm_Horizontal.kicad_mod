@@ -38,7 +38,7 @@
   (pad "2" thru_hole circle (at 0 2) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask) (tstamp 8156498a-d061-4e0a-bdcd-2c0e3a21d7b3))
   (pad "3" thru_hole circle (at 0 4) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask) (tstamp b381f07b-8521-4a1b-b35f-c9f23318d209))
   (pad "4" thru_hole circle (at 0 6) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask) (tstamp 20e7444e-106c-4374-a518-dec07ed01f35))
-  (model "${KIPRJMOD}/libfootprints/3dmodels/Grove_Connector.wrl"
+  (model "${KIPRJMOD}/libfootprints.pretty/3dmodels/Grove_Connector.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 0.3937007874 0.3937007874 0.3937007874))
     (rotate (xyz 0 0 0))
