@@ -1,0 +1,2 @@
+Seeed_Studio_XIAO_Series.kicad_sym : https://github.com/Seeed-Studio/OPL_Kicad_Library/blob/master/Seeed%20Studio%20XIAO%20Series%20Library/Seeed_Studio_XIAO_Series.kicad_sym
+keebio.lib : https://github.com/keebio/keebio-components/blob/master/keebio.lib

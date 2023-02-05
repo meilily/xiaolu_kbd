@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "Seeed_Studio_XIAO_Series")(type "KiCad")(uri "${KIPRJMOD}/libsymbols/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
+  (lib (name "keebio")(type "Legacy")(uri "${KIPRJMOD}/libsymbols/keebio.lib")(options "")(descr ""))
 )
