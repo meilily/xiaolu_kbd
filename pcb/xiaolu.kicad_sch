@@ -1342,7 +1342,7 @@
     (property "Value" "Seeed Studio XIAO SAMD21" (id 1) (at 88.3794 78.74 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Xiaolu-Specific:XIAO-SAMD21-RP2040-Hybrid-14P-2.54-21X17.8MM" (id 2) (at 74.93 49.53 0)
+    (property "Footprint" "Xiaolu-Specific:XIAO-Generic-Hybrid-14P-2.54-21X17.8MM" (id 2) (at 74.93 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 74.93 49.53 0)
@@ -2123,7 +2123,7 @@
       (reference "SW16") (unit 1) (value "SW_Push") (footprint "Xiaolu-Specific:SW_PUSH_Switronic_TS-AXXXH")
     )
     (path "/31979451-8777-4b8b-b45d-fef92cd05572"
-      (reference "U1") (unit 1) (value "Seeed Studio XIAO SAMD21") (footprint "Xiaolu-Specific:XIAO-SAMD21-RP2040-Hybrid-14P-2.54-21X17.8MM")
+      (reference "U1") (unit 1) (value "Seeed Studio XIAO SAMD21") (footprint "Xiaolu-Specific:XIAO-Generic-Hybrid-14P-2.54-21X17.8MM")
     )
   )
 )
