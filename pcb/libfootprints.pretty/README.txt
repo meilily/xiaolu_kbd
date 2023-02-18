@@ -1,4 +1,3 @@
-NS-Tech_Grove_1x04_P2mm_Horizontal.kicad_mod : https://github.com/asukiaaa/asukiaaa-kicad-footprints.pretty/blob/master/NS-Tech_Grove_1x04_P2mm_Horizontal.kicad_mod
 Symbol_CreativeCommons_CC-BY-SA_SilkScreen.kicad_mod : handmaid kicad footprint mod using creative commons logos
 SW_PUSH_Switronic_TS-AXXXH.kicad_mod : handmaid kicad footprint mod
 TRRS-PJ-320A.kicad_mod : https://github.com/keebio/Keebio-Parts.pretty/blob/master/TRRS-PJ-320A.kicad_mod
