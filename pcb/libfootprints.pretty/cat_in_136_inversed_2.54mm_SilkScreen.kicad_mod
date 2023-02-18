@@ -1,0 +1,43 @@
+(footprint "cat_in_136_inversed_2.54mm_SilkScreen" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 0)
+  (attr smd)
+  (fp_text reference "REF**" (at 1.27 -2.54 unlocked) (layer "F.SilkS")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 9ae01765-f63f-47ac-81c0-9ce1d5a82f44)
+  )
+  (fp_text value "cat_in_136_inversed_2.54mm_SilkScreen" (at 0 5.08 unlocked) (layer "F.Fab")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 466646c5-9b87-4a78-ba92-dae32d6cc15f)
+  )
+  (fp_text user "${REFERENCE}" (at 0 7.62 unlocked) (layer "F.Fab")
+    (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 08a9cdf1-7ae2-412a-b0df-33668d229dfe)
+  )
+  (fp_rect (start 0 0) (end 2.54 2.54) (layer "F.SilkS") (width 0.12) (fill none) (tstamp 4f383325-3117-4743-a84c-cbe064bef66e))
+  (fp_poly (pts
+      (xy 1.979163 1.145831)
+      (xy 1.61458 1.145831)
+      (xy 1.61458 0.781248)
+      (xy 1.979163 0.781248)
+    ) (layer "F.SilkS") (width 0) (fill solid) (tstamp 8e21e419-dfa9-4d73-9e69-0fba77c58523))
+  (fp_poly (pts
+      (xy 1.979163 1.874996)
+      (xy 0.572916 1.874996)
+      (xy 0.572916 1.718747)
+      (xy 1.979163 1.718747)
+    ) (layer "F.SilkS") (width 0) (fill solid) (tstamp bc3e766b-1866-48e8-9d08-2d3522fa68e8))
+  (fp_poly (pts
+      (xy 0.937498 1.145831)
+      (xy 0.572916 1.145831)
+      (xy 0.572916 0.781248)
+      (xy 0.937498 0.781248)
+    ) (layer "F.SilkS") (width 0) (fill solid) (tstamp d6cfc7ed-d0eb-424a-8b46-2d5dcf64cadd))
+  (group "" (id 1f6a0cd5-ca66-4106-975f-f8b1bcb7ee48)
+    (members
+      8e21e419-dfa9-4d73-9e69-0fba77c58523
+      bc3e766b-1866-48e8-9d08-2d3522fa68e8
+      d6cfc7ed-d0eb-424a-8b46-2d5dcf64cadd
+    )
+  )
+)
