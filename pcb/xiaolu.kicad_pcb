@@ -4147,7 +4147,7 @@
   (gr_text "@cat_in_136/CC BY-SA" (at 60.96 123.19) (layer "B.SilkS") (tstamp 904e05dd-9245-47db-941e-c35c16b653f8)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror))
   )
-  (gr_text "GND\n5V\nSDA/GP6\nSCL/GP7" (at 57.15 66.04) (layer "B.SilkS") (tstamp 95d1b7ce-4a08-489c-b7f5-15d8d4d1de0f)
+  (gr_text "GND\n5V\nSDA/GP5\nSCL/GP6" (at 57.15 66.04) (layer "B.SilkS") (tstamp 95d1b7ce-4a08-489c-b7f5-15d8d4d1de0f)
     (effects (font (size 0.8 0.8) (thickness 0.15)) (justify left mirror))
   )
   (gr_text "R2:SDA\nR1:SCL\nT:5V\nS:GND" (at 65.405 57.3767) (layer "B.SilkS") (tstamp 9ea18755-a571-4086-9a98-3a6f89e27410)
