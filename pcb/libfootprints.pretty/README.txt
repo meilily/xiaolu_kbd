@@ -1,3 +1,4 @@
+NS-Tech_Grove_1x04_P2mm_Hybrid.kicad_mod : handmaid kicad print mod derived from NS-Tech_Grove_1x04_P2mm_Vertical.kicad_mod (Kicad official)
 Symbol_CreativeCommons_CC-BY-SA_SilkScreen.kicad_mod : handmaid kicad footprint mod using creative commons logos
 SW_PUSH_Switronic_TS-AXXXH.kicad_mod : handmaid kicad footprint mod
 TRRS-PJ-320A.kicad_mod : https://github.com/keebio/Keebio-Parts.pretty/blob/master/TRRS-PJ-320A.kicad_mod

@@ -1740,7 +1740,7 @@
     (uuid b1765cdf-6a38-4dd8-bdad-abffed91abd0)
     (property "Reference" "J1" (id 0) (at 64.135 105.41 0))
     (property "Value" "Conn_01x04_Male" (id 1) (at 64.135 107.95 0))
-    (property "Footprint" "Connector:NS-Tech_Grove_1x04_P2mm_Vertical" (id 2) (at 63.5 113.03 0)
+    (property "Footprint" "Xiaolu-Specific:NS-Tech_Grove_1x04_P2mm_Hybrid" (id 2) (at 63.5 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 63.5 113.03 0)
@@ -2069,7 +2069,7 @@
       (reference "D16") (unit 1) (value "D") (footprint "Diode_SMD:D_SOD-323")
     )
     (path "/b1765cdf-6a38-4dd8-bdad-abffed91abd0"
-      (reference "J1") (unit 1) (value "Conn_01x04_Male") (footprint "Connector:NS-Tech_Grove_1x04_P2mm_Vertical")
+      (reference "J1") (unit 1) (value "Conn_01x04_Male") (footprint "Xiaolu-Specific:NS-Tech_Grove_1x04_P2mm_Hybrid")
     )
     (path "/75c6c114-4c92-4cd3-b594-b71491cab033"
       (reference "J2") (unit 1) (value "TRRS") (footprint "Xiaolu-Specific:TRRS-PJ-320A")
