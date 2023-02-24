@@ -469,6 +469,11 @@
       (net 21 "GND") (pinfunction "GND") (pintype "power_in") (tstamp eb705d34-56ff-42b0-8f13-f676714b5505))
     (pad "14" thru_hole oval (at 7.625 -7.62) (size 3.7 1.7) (drill 1 (offset 1 0)) (layers *.Cu *.Mask)
       (net 22 "+5V") (pinfunction "5V") (pintype "power_in") (tstamp e141f370-4e26-4193-8104-8f3f92e32360))
+    (model "${KIPRJMOD}/libfootprints.pretty/3dmodels/Seeed Studio XIAO RP2040 v26.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Xiaolu-Specific:NS-Tech_Grove_1x04_P2mm_Hybrid" (layer "F.Cu")
