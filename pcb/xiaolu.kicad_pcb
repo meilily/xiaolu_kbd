@@ -7,8 +7,8 @@
   (paper "A4")
   (title_block
     (title "Xiaolu KBD PCB")
-    (date "2023-02-04")
-    (rev "0.0")
+    (date "2023-03-09")
+    (rev "1.0.0")
     (company "@cat_in_136")
   )
 
@@ -126,7 +126,7 @@
   (net 29 "unconnected-(U1-Pad1)")
   (net 30 "+3.3V")
   (net 31 "Net-(JP1-Pad1)")
-  (net 32 "Net-(R2-Pad1)")
+  (net 32 "Net-(JP2-Pad1)")
 
   (footprint "Xiaolu-Specific:XIAO-Generic-Hybrid-14P-2.54-21X17.8MM" (layer "F.Cu")
     (tedit 5EA16CE1) (tstamp 141d5c1c-d790-40e4-ae3b-747c4e57eb67)
@@ -1522,7 +1522,7 @@
     (fp_line (start -0.525 0.27) (end 0.525 0.27) (layer "B.Fab") (width 0.1) (tstamp dd194913-0420-4657-b004-7b260fb75465))
     (fp_line (start 0.525 0.27) (end 0.525 -0.27) (layer "B.Fab") (width 0.1) (tstamp e817861e-5767-4b27-92f2-431c349cfc6f))
     (pad "1" smd roundrect (at -0.51 0) (size 0.54 0.64) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
-      (net 32 "Net-(R2-Pad1)") (pintype "passive") (tstamp 4e8acd27-5f61-4ee7-8dc3-98ec8f6f84c4))
+      (net 32 "Net-(JP2-Pad1)") (pintype "passive") (tstamp 4e8acd27-5f61-4ee7-8dc3-98ec8f6f84c4))
     (pad "2" smd roundrect (at 0.51 0) (size 0.54 0.64) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.25)
       (net 30 "+3.3V") (pintype "passive") (tstamp c92646f5-7c89-433f-b863-4c5e92990abb))
     (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.wrl"
@@ -2356,7 +2356,7 @@
     (fp_line (start 1.65 -1.25) (end -1.65 -1.25) (layer "B.CrtYd") (width 0.05) (tstamp a2012d3e-7a74-450c-bc5a-83aedbce3519))
     (fp_line (start -1.65 1.25) (end 1.65 1.25) (layer "B.CrtYd") (width 0.05) (tstamp cebe825e-fde2-4c67-a65c-cdee4adad8a1))
     (pad "1" smd custom (at -0.65 0 180) (size 1 0.5) (layers "B.Cu" "B.Mask")
-      (net 32 "Net-(R2-Pad1)") (pinfunction "A") (pintype "passive") (zone_connect 2)
+      (net 32 "Net-(JP2-Pad1)") (pinfunction "A") (pintype "passive") (zone_connect 2)
       (options (clearance outline) (anchor rect))
       (primitives
         (gr_circle (center 0 -0.25) (end 0.5 -0.25) (width 0) (fill yes))
