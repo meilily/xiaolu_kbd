@@ -48,6 +48,8 @@ static const uint8_t CARKB_KEYMAP[][3] = {
     {0xb6, KEY_DOWN_ARROW, 0},
     {0xb4, KEY_LEFT_ARROW, 0},
     {0xb7, KEY_RIGHT_ARROW, 0},
+    // Shift + Key combination
+    {0x7f, KEY_DELETE, 0}, // Shift + Backspace
     // Fn + Key combination
     {0x81, KEY_F1, 0},           // Fn + 1
     {0x82, KEY_F2, 0},           // Fn + 2
@@ -58,8 +60,8 @@ static const uint8_t CARKB_KEYMAP[][3] = {
     {0x87, KEY_F7, 0},           // Fn + 7
     {0x88, KEY_F8, 0},           // Fn + 8
     {0x89, KEY_F9, 0},           // Fn + 9
-    {0x8a, KEY_F10, 0},          // Fn + 10
-    {0x8b, KEY_F11, 0},          // Fn + 11
+    {0x8a, KEY_F10, 0},          // Fn + 0
+    {0x8b, KEY_F11, 0},          // Fn + Backspace
     {0x99, KEY_PAGE_UP, 0},      // Fn + Up
     {0xa4, KEY_PAGE_DOWN, 0},    // Fn + Down
     {0x98, KEY_HOME, 0},         // Fn + Left
