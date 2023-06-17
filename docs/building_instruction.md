@@ -74,10 +74,34 @@ TRRSジャックを付けている場合にはTRRSジャックもトッププレ
 
 ## ファームウェア
 
-### Arduino
+### Platform IO/Arduino
 
-未実装
+サンプルファームウェアの Platform IO プロジェクトは [/firmware/platformio_arduino](../firmware/platformio_arduino) にあります。
+
+必要に応じてプログラムを追加・編集してください。
+[サンプルファームウエアのコード](../firmware/platformio_arduino/src/main.c) はシンプルなテンキーで、
+さらにGroveコネクタに[M5stack CardKB Unit](https://docs.m5stack.com/en/unit/cardkb_1.1)をつないだときCardKB Unitの入力をキーボード入力に変換する処理が含まれます。
+
+以下に Windows + Visual Studio Code 環境でのファームウェアのビルド・アップロードの方法を記載します。
+
+1. <https://zadig.akeo.ie/> から Zadig をインストールします
+2. Zadig を起動します
+3. PC の USB に Xiaolu KBD をつなぎます
+4. Seeed Xiao RP2040 の BOOTボタンを押した状態でリセットボタンを押します。すると、USBマスストレージモード(RPI-RP2)でつながります
+5. すると Zadig のウィンドウで RP2 Boot (Interface X) が選択されます。選択されない場合はセレクトボックスから選択します
+6. インストール先のドライバとして WinUSB を選択して、 Install Driver ボタンをクリックします
+7. しばらくすると The driver was installed successfuly というダイアログが表示されドライバがインストールされます。これで Zadig のウィンドウを閉じます
+8. <https://code.visualstudio.com/> から Visual Studio Code をインストールします
+9. Visual Studio Code を起動して [PlatformIO IDE](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide) 拡張をインストールします。（ VS Code Quick Open (Ctrl+P) で表示されるテキストボックスに `ext install platformio.platformio-ide` を入力して Enter でインストール出来ます ）
+10. PlatformIO IDE has been installed successfully installed! Please reload windows と表示されるので Reload Now と書かれたボタンをクリックします
+11. <https://github.com/cat-in-136/xiaolu_kbd> を Git で適当なフォルダにクローンするか、 <https://codeload.github.com/cat-in-136/xiaolu_kbd/zip/refs/heads/main> からダウンロードして適当なフォルダに展開します
+12. Visual Studio Code の Platformio をクリックして、Pick a folder をクリックし、前項で展開したフォルダの中の [firmware\\platformio_arduino](../firmware/platformio_arduino) 相当のフォルダを選択します
+13. "Do you trust the authors of the files in this folder?" というダイアログが出たら "Yes, I trust the authors" と書かれたボタンをクリックします
+14. すると依存ライブラリのダウンロードなど (PlatformIO: Configuring project) がされますのでしばらく待ちます
+15. Visual Studio Code の下の [PlatformIO Toolbar](https://docs.platformio.org/en/latest/integration/ide/vscode.html#ide-vscode-toolbar) から → Upload をクリックします
+
+手順 15 でファームウェアのアップロードに失敗するときは、USB がきちんとささっていない他に、 WinUSB がインストールされていない場合があります。
 
 ### QMK
 
-未実装
+未執筆
