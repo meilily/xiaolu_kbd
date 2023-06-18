@@ -74,6 +74,8 @@ TRRSジャックを付けている場合にはTRRSジャックもトッププレ
 
 ## ファームウェア
 
+サンプルファームウエアは Platform IO (Arduino) と QMK を用意しています。
+
 ### Platform IO/Arduino
 
 サンプルファームウェアの Platform IO プロジェクトは [/firmware/platformio_arduino](../firmware/platformio_arduino) にあります。
@@ -84,14 +86,14 @@ TRRSジャックを付けている場合にはTRRSジャックもトッププレ
 
 以下に Windows + Visual Studio Code 環境でのファームウェアのビルド・アップロードの方法を記載します。
 
-1. <https://zadig.akeo.ie/> から Zadig をインストールします
+1. <https://zadig.akeo.ie/> から Zadig をダウンロードします
 2. Zadig を起動します
 3. PC の USB に Xiaolu KBD をつなぎます
 4. Seeed Xiao RP2040 の BOOTボタンを押した状態でリセットボタンを押します。すると、USBマスストレージモード(RPI-RP2)でつながります
 5. すると Zadig のウィンドウで RP2 Boot (Interface X) が選択されます。選択されない場合はセレクトボックスから選択します
 6. インストール先のドライバとして WinUSB を選択して、 Install Driver ボタンをクリックします
 7. しばらくすると The driver was installed successfuly というダイアログが表示されドライバがインストールされます。これで Zadig のウィンドウを閉じます
-8. <https://code.visualstudio.com/> から Visual Studio Code をインストールします
+8. <https://code.visualstudio.com/> から Visual Studio Code をダウンロード・インストールします
 9. Visual Studio Code を起動して [PlatformIO IDE](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide) 拡張をインストールします。（ VS Code Quick Open (Ctrl+P) で表示されるテキストボックスに `ext install platformio.platformio-ide` を入力して Enter でインストール出来ます ）
 10. PlatformIO IDE has been installed successfully installed! Please reload windows と表示されるので Reload Now と書かれたボタンをクリックします
 11. <https://github.com/cat-in-136/xiaolu_kbd> を Git で適当なフォルダにクローンするか、 <https://codeload.github.com/cat-in-136/xiaolu_kbd/zip/refs/heads/main> からダウンロードして適当なフォルダに展開します
@@ -104,4 +106,33 @@ TRRSジャックを付けている場合にはTRRSジャックもトッププレ
 
 ### QMK
 
-未執筆
+[/firmware/qmk/keyboards/cat_in_136/xiaolu_kbd](../firmware/qmk/keyboards/cat_in_136/xiaolu_kbd) を `keyboards/cat_in_136/xiaolu_kbd` にコピーして QMK をビルド・アップロードします。
+
+必要に応じてキーマップを追加・編集してください。
+デフォルトキーマップはシンプルなテンキーになっています。
+
+以下に Windows + QMK MSYS 環境でのファームウェアのビルド・アップロードの方法を記載します。
+
+1. <https://msys.qmk.fm/> から QMK MSYS をダウンロード・インストールします
+2. QMK MSYS を起動します。
+3. コンソール画面で下記を実行します。
+   ```console
+   $ qmk setup
+   ```
+4. <https://github.com/cat-in-136/xiaolu_kbd> を Git で適当なフォルダにクローンするか、 <https://codeload.github.com/cat-in-136/xiaolu_kbd/zip/refs/heads/main> からダウンロードして適当なフォルダに展開します
+5. 前項で展開したフォルダから `firmware/qmk` を `qmk_firmware/keyboards/cat_in_136/xiaolu_kbd` にコピーします。
+   ```console
+   $ mkdir qmk_firmware/keyboards/cat_in_136
+   $ cp -r path/to/xiaolu_kbd/firmware/qmk/keyboards/cat_in_136/xiaolu_kbd qmk_firmware/keyboards/cat_in_136/xiaolu_kbd
+   ```
+6. qmk をコンパイルします。
+   ```console
+   $ qmk compile -kb cat_in_136/xiaolu_kbd -km default
+   $ qmk flash -kb cat_in_136/xiaolu_kbd -km default
+   ```
+7. qmk をアップロードします。
+   ```console
+   $ qmk flash -kb cat_in_136/xiaolu_kbd -km default
+   ```
+8. 途中で Waiting for drive to deploy... と表示されるので、Seeed Xiao RP2040 の BOOTボタンを押した状態でリセットボタンを押します。するとファームウエアの書き込みが完了します。
+9. Xiaolu KBD がキーボードとして認識されるまでしばらく待ちます。
