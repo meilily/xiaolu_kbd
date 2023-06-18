@@ -15,10 +15,11 @@ Xiaolu Keyboard
 
 ## 外観図
 
-![正面図](docs/xiaolu_3d_topview.png)
+![組立例](docs/xiaolu_kbd_with_sandwitch_mount.jpg)
 
-![インタフェース](docs/xiaolu_interfaces_3d.png)
+![インタフェース(3D CG)](docs/xiaolu_interfaces_3d.png)
 
 ## License
 
-licensed under the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+licensed under the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) except for QMK.
+QMK firmware source code is licensed under the [GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
