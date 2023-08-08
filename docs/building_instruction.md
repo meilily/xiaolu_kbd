@@ -100,9 +100,15 @@ TRRSジャックを付けている場合にはTRRSジャックもトッププレ
 12. Visual Studio Code の Platformio をクリックして、Pick a folder をクリックし、前項で展開したフォルダの中の [firmware\\platformio_arduino](../firmware/platformio_arduino) 相当のフォルダを選択します
 13. "Do you trust the authors of the files in this folder?" というダイアログが出たら "Yes, I trust the authors" と書かれたボタンをクリックします
 14. すると依存ライブラリのダウンロードなど (PlatformIO: Configuring project) がされますのでしばらく待ちます
-15. Visual Studio Code の下の [PlatformIO Toolbar](https://docs.platformio.org/en/latest/integration/ide/vscode.html#ide-vscode-toolbar) から → Upload をクリックします
-
-手順 15 でファームウェアのアップロードに失敗するときは、USB がきちんとささっていない他に、 WinUSB がインストールされていない場合があります。
+    * **注意:** 手順14でファイルパスが長くなってしまう場合は、以下の手順で対応してください
+       1. レジストリエディタを開きます
+       2. `コンピューター\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem` に移動します
+       3. `LongPathsEnabled` というDWORDの値があることを確認します。ない場合は作成します
+       4. `LongPathsEnabled` の値を `1` に設定します
+       5. コマンドプロンプトを開き、`git config --system core.longpaths true` と入力して実行します
+       6. Windows を再起動します
+16. Visual Studio Code の下の [PlatformIO Toolbar](https://docs.platformio.org/en/latest/integration/ide/vscode.html#ide-vscode-toolbar) から → Upload をクリックします
+    * 手順 15 でファームウェアのアップロードに失敗するときは、USB がきちんとささっていない他に、 WinUSB がインストールされていない場合があります。
 
 ### QMK
 
